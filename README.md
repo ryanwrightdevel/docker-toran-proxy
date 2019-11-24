@@ -110,7 +110,7 @@ Below is the complete list of available options that can be used to customize yo
 - **TORAN_TOKEN_GITHUB**: Add your Github token for ensure download repositories since Github. Default `null`.
 - **TORAN_TRACK_DOWNLOADS**: Track private package installs, set to `true` to get an install log in `/data/toran-proxy/logs/downloads.private.log`. Defaults to `false`
 - **TORAN_MONO_REPO**: Set to `true` for switch to a monorepo instead of dual repo model. Defaults to `false`
-- **PHP_TIMEZONE**: Configure timezone PHP. Default `Europe/Paris`.
+- **PHP_TIMEZONE**: Configure timezone PHP. Default `America/New_York`.
 - **TORAN_AUTH_ENABLE**: Set to `true` to enable HTTP Basic Authentication. When enabled, `TORAN_AUTH_USER` and `TORAN_AUTH_PASSWORD` are required. Defaults to `false`.
 - **TORAN_AUTH_USER**: Configure the HTTP Basic Authentication Username. Defaults to `toran`.
 - **TORAN_AUTH_PASSWORD**: Configure the HTTP Basic Authentication Password. Defaults to `toran`.

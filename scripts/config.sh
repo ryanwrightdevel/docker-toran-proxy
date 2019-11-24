@@ -9,7 +9,7 @@ ASSETS_DIRECTORY=/assets
 SCRIPTS_DIRECTORY=/scripts/toran-proxy
 
 # PHP Configuration
-PHP_TIMEZONE=${PHP_TIMEZONE:-Europe/Paris}
+PHP_TIMEZONE=${PHP_TIMEZONE:-America/New_York}
 
 # Toran Proxy Configuration
 TORAN_HOST=${TORAN_HOST:-localhost}

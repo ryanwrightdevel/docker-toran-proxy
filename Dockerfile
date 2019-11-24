@@ -1,5 +1,6 @@
 FROM ubuntu:18.04
 MAINTAINER dev@cedvan.com
+ARG DEBIAN_FRONTEND=noninteractive
 
 # Install requirements
 RUN apt-get update -qq \
@@ -23,11 +24,14 @@ RUN apt-get update -qq \
     && LANG=C.UTF-8 add-apt-repository -y ppa:ondrej/php \
     && apt-get purge -qqy software-properties-common
 
+
+
 # Install PHP and Nginx
 RUN apt-get update -qq \
     && apt-get install -qqy \
         git \
         apt-transport-https \
+        tzdata \
         daemontools \
         php7.1-fpm \
         php7.1-json \
