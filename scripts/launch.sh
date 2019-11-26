@@ -4,7 +4,7 @@
 source /scripts/toran-proxy/config.sh
 
 # Initilisation
-source $SCRIPTS_DIRECTORY/install/common.sh
+source $SCRIPTS_DIRECTORY/install/common.sh #setup logs folder in DATA dir
 source $SCRIPTS_DIRECTORY/install/toran.sh
 source $SCRIPTS_DIRECTORY/install/ssh.sh
 source $SCRIPTS_DIRECTORY/install/php.sh

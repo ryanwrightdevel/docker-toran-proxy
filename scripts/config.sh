@@ -4,7 +4,7 @@ echo "Check environment configuration..."
 
 # Directories
 DATA_DIRECTORY=/data/toran-proxy
-WORK_DIRECTORY=/var/www
+WORK_DIRECTORY=/var/www/toran
 ASSETS_DIRECTORY=/assets
 SCRIPTS_DIRECTORY=/scripts/toran-proxy
 
@@ -28,9 +28,9 @@ TORAN_AUTH_USER=${TORAN_AUTH_USER:-toran}
 TORAN_AUTH_PASSWORD=${TORAN_AUTH_PASSWORD:-toran}
 
 # Checking PHP Timezone
-if [[ ! "${PHP_TIMEZONE}" =~ ^[A-Z]{1}[a-z]+/[A-Z]{1}[a-z]+$ ]]; then
+if [[ ! "${PHP_TIMEZONE}" =~ ^[A-Z]{1}[a-z]+/[A-Z]{1}[a-zA-Z_]+$ ]]; then
     echo "ERROR: "
-    echo "  Variable PHP_TIMEZONE isn't valid ! (Format accepted : [A-Z]{1}[a-z]+/[A-Z]{1}[a-z]+)"
+    echo "  Variable PHP_TIMEZONE '${PHP_TIMEZONE}' isn't valid ! (Format accepted : [A-Z]{1}[a-z]+/[A-Z]{1}[a-z_]+)"
     exit 1
 fi
 
